@@ -12,7 +12,7 @@ _Create vite tempaltes[🔗](https://github.com/vitejs/vite/tree/main/packages/c
 
 ### minimum kana game
 
-🚧 Choose subset of hiragana and katakana  
-🚧 Quiz selection in random order, without replacement
+🚧 Choose subset of hiragana and katakana
+🚧 Quiz selection in random order, without repplace
 
 ### other kana game features
