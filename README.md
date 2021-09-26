@@ -2,7 +2,7 @@
 
 ## Tasks
 
-### minium vite + svelte setup
+### 🧪 minium vite + svelte setup
 
 📝 Vite documentation:  
 _🧪 Why Vite[🔗](https://vitejs.dev/guide/why.html)_  
@@ -12,7 +12,7 @@ _🧪 Getting started[🔗](https://vitejs.dev/guide/)_
 🐙🐱 GitHub repo:  
 _Create vite templates[🔗](https://github.com/vitejs/vite/tree/main/packages/create-vite)_
 
-### minimum kana game
+### 🚧 minimum kana game
 
 🚧 Choose subset of hiragana and katakana  
 🚧 Quiz selection in random order, without replacement
