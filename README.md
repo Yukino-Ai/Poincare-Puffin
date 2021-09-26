@@ -14,15 +14,12 @@ _Create vite templates[🔗](https://github.com/vitejs/vite/tree/main/packages/c
 
 ### 🧪 Clean up template 🧪
 
-### 🚧Component design🚧
-
-[🔗](https://codechips.me/svelte-cross-component-communication/)
-3 different ways of cross-component communication in Svelte  
-👤 [Ilia Mikhailov](https://codechips.me/about/)
-
 ### 🚧Hirigana + Katakana selector🚧
 
 🚧 Choose subset of hiragana and katakana
+
+📝 Svelte official tutorial  
+[🔗](https://svelte.dev/tutorial/multiple-select-bindings) Svelte multiple binding
 
 ### 🚧Randon quiz questions🚧
 

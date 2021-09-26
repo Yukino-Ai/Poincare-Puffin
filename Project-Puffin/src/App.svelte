@@ -1,14 +1,14 @@
 <script>
-  import Counter from './lib/Counter.svelte'
+  import Quiz from "./lib/Quiz.svelte";
 </script>
 
 <main>
-  <h1>Hello world</h1>
+  <Quiz />
 </main>
 
-<style>
+<!-- <style>
   :root {
     font-family: sans-serif;
   }
 
-</style>
+</style> -->
