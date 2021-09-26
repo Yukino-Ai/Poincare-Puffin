@@ -1,8 +1,6 @@
 # Poincare-Puffin
 
-## Tasks
-
-### minium vite + svelte setup
+## 🧪 minium vite + svelte setup 🧪
 
 📝 Vite documentation:  
 _🧪 Why Vite[🔗](https://vitejs.dev/guide/why.html)_  
@@ -12,12 +10,29 @@ _🧪 Getting started[🔗](https://vitejs.dev/guide/)_
 🐙🐱 GitHub repo:  
 _Create vite templates[🔗](https://github.com/vitejs/vite/tree/main/packages/create-vite)_
 
-### minimum kana game
+## 🚧 Minimum kana game 🚧
 
-🚧 Choose subset of hiragana and katakana  
+### 🧪 Clean up template 🧪
+
+### 🚧Hirigana + Katakana selector🚧
+
+🚧 Choose subset of hiragana and katakana
+
+📝 Svelte official tutorial  
+[🔗](https://svelte.dev/tutorial/multiple-select-bindings) Svelte multiple binding
+
+### 🚧Randon quiz questions🚧
+
 🚧 Quiz selection in random order, without replacement
 
-### other kana game features
+### Links
+
+[🔗](https://itazuraneko.neocities.org/learn/kana.html) Itazuraneko kana  
+🐙🐱 GitHub repo  
+[🔗](https://github.com/itazuraneko/itazuraneko/blob/master/js/djtkana.js)
+JS source
+
+## other kana game features
 
 ## Notes
 
