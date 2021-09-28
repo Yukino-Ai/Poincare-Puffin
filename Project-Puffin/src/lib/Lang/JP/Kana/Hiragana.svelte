@@ -150,9 +150,4 @@
     margin: 10px;
     border-radius: 10px;
   }
-
-  .col {
-    display: flex;
-    flex-direction: column;
-  }
 </style>
