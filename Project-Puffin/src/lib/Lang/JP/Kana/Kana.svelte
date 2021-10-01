@@ -13,7 +13,7 @@
 
 <div class="Kana" on:click={handleClick}>
   <div>{kana}</div>
-  <div>{romanji}</div>
+  <!-- <div>{romanji}</div> -->
 </div>
 
 <style>
