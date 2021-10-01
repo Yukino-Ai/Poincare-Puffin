@@ -174,10 +174,8 @@
     border-radius: 10px;
     font-size: 30px;
     /* https://en.wikipedia.org/wiki/Traditional_colors_of_Japan */
-    /* Oitake-iro */
-    border: 3px solid #5e644f;
-    /* Aisumicha */
-    background-color: #393432;
+    /* Kokushoku */
+    background-color: #171412;
   }
 
   .titleContainer {
