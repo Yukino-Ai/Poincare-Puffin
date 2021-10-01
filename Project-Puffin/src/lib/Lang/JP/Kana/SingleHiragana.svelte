@@ -1,8 +1,9 @@
 <script>
   import KanaGroup from "./KanaGroup.svelte";
+  // import simpleHiraganaList as * from "./Lists/simpleHiraganaList.js";
   // 🍂Monographs🍃
   // 🌿No diacritics🌿
-  let vowel = [
+  const vowel = [
     { kana: "あ", romanji: "a" },
     { kana: "い", romanji: "i" },
     { kana: "う", romanji: "u" },
@@ -10,7 +11,7 @@
     { kana: "お", romanji: "o" },
   ];
 
-  let k = [
+  const k = [
     { kana: "か", romanji: "ka" },
     { kana: "き", romanji: "ki" },
     { kana: "く", romanji: "ku" },
@@ -18,7 +19,7 @@
     { kana: "こ", romanji: "ko" },
   ];
 
-  let s = [
+  const s = [
     { kana: "さ", romanji: "sa" },
     { kana: "し", romanji: "shi" },
     { kana: "す", romanji: "su" },
@@ -26,7 +27,7 @@
     { kana: "そ", romanji: "so" },
   ];
 
-  let t = [
+  const t = [
     { kana: "た", romanji: "ta" },
     { kana: "ち", romanji: "chi" },
     { kana: "つ", romanji: "tsu" },
@@ -34,7 +35,7 @@
     { kana: "と", romanji: "to" },
   ];
 
-  let n = [
+  const n = [
     { kana: "な", romanji: "na" },
     { kana: "に", romanji: "ni" },
     { kana: "ぬ", romanji: "nu" },
@@ -42,7 +43,7 @@
     { kana: "の", romanji: "no" },
   ];
 
-  let h = [
+  const h = [
     { kana: "は", romanji: "ha" },
     { kana: "ひ", romanji: "hi" },
     { kana: "ふ", romanji: "fu" },
@@ -50,7 +51,7 @@
     { kana: "ほ", romanji: "ho" },
   ];
 
-  let m = [
+  const m = [
     { kana: "ま", romanji: "ma" },
     { kana: "み", romanji: "mi" },
     { kana: "む", romanji: "mu" },
@@ -58,13 +59,13 @@
     { kana: "も", romanji: "mo" },
   ];
 
-  let ya = [
+  const ya = [
     { kana: "や", romanji: "ya" },
     { kana: "ゆ", romanji: "yu" },
     { kana: "よ", romanji: "yo" },
   ];
 
-  let r = [
+  const r = [
     { kana: "ら", romanji: "ra" },
     { kana: "り", romanji: "ri" },
     { kana: "る", romanji: "ru" },
@@ -72,15 +73,15 @@
     { kana: "ろ", romanji: "ro" },
   ];
 
-  let w = [
+  const w = [
     { kana: "わ", romanji: "wa" },
     { kana: "を", romanji: "o" },
   ];
 
-  let nn = [{ kana: "ん", romanji: "n" }];
+  const nn = [{ kana: "ん", romanji: "n" }];
 
   // 🌿With diacritics🌿
-  let g = [
+  const g = [
     { kana: "が", romanji: "ga" },
     { kana: "ぎ", romanji: "gi" },
     { kana: "ぐ", romanji: "gu" },
@@ -88,7 +89,7 @@
     { kana: "ご", romanji: "go" },
   ];
 
-  let z = [
+  const z = [
     { kana: "ざ", romanji: "za" },
     { kana: "じ", romanji: "ji" },
     { kana: "ず", romanji: "zu" },
@@ -96,7 +97,7 @@
     { kana: "ぞ", romanji: "zo" },
   ];
 
-  let d = [
+  const d = [
     { kana: "だ", romanji: "da" },
     { kana: "ぢ", romanji: "ji" },
     { kana: "づ", romanji: "zu" },
@@ -104,7 +105,7 @@
     { kana: "ど", romanji: "do" },
   ];
 
-  let b = [
+  const b = [
     { kana: "ば", romanji: "ba" },
     { kana: "び", romanji: "bi" },
     { kana: "ぶ", romanji: "bu" },
@@ -112,7 +113,7 @@
     { kana: "ぼ", romanji: "bo" },
   ];
 
-  let p = [
+  const p = [
     { kana: "ぱ", romanji: "pa" },
     { kana: "ぴ", romanji: "pi" },
     { kana: "ぷ", romanji: "pu" },
@@ -121,33 +122,67 @@
   ];
 </script>
 
-<div class="Hiragana">
-  <KanaGroup group={p} />
-  <KanaGroup group={b} />
-  <KanaGroup group={d} />
-  <KanaGroup group={z} />
-  <KanaGroup group={g} />
-  <KanaGroup group={nn} />
-  <KanaGroup group={w} />
-  <KanaGroup group={r} />
-  <KanaGroup group={ya} />
-  <KanaGroup group={m} />
-  <KanaGroup group={h} />
-  <KanaGroup group={n} />
-  <KanaGroup group={t} />
-  <KanaGroup group={s} />
-  <KanaGroup group={k} />
-  <KanaGroup group={vowel} />
+<div class="SingleHiragana">
+  <div class="titleContainer">
+    <div class="title">Simple hiragana</div>
+  </div>
+
+  <div class="chart">
+    <KanaGroup group={p} />
+    <KanaGroup group={b} />
+    <KanaGroup group={d} />
+    <KanaGroup group={z} />
+    <KanaGroup group={g} />
+    <KanaGroup group={nn} />
+    <KanaGroup group={w} />
+    <KanaGroup group={r} />
+    <KanaGroup group={ya} />
+    <KanaGroup group={m} />
+    <KanaGroup group={h} />
+    <KanaGroup group={n} />
+    <KanaGroup group={t} />
+    <KanaGroup group={s} />
+    <KanaGroup group={k} />
+    <KanaGroup group={vowel} />
+  </div>
 </div>
 
 <style>
-  .Hiragana {
+  .chart {
     /* https://en.wikipedia.org/wiki/Traditional_colors_of_Japan */
     /* Kokushoku */
     background-color: #171412;
     display: flex;
     padding: 15px;
-    margin: 10px;
+    margin: 3px;
     border-radius: 10px;
+  }
+
+  .SingleHiragana {
+    /* https://en.wikipedia.org/wiki/Traditional_colors_of_Japan */
+    /* Kokushoku */
+    /* background-color: #171412; */
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .title {
+    padding: 10px;
+    margin: 3px;
+    border-radius: 10px;
+    font-size: 30px;
+    /* https://en.wikipedia.org/wiki/Traditional_colors_of_Japan */
+    /* Oitake-iro */
+    border: 3px solid #5e644f;
+    /* Aisumicha */
+    background-color: #393432;
+  }
+
+  .titleContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
   }
 </style>

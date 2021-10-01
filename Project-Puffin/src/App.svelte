@@ -1,12 +1,12 @@
 <script>
-  import Hiragana from "./lib/Lang/JP/Kana/Hiragana.svelte";
+  import SingleHiragana from "./lib/Lang/JP/Kana/SingleHiragana.svelte";
 </script>
 
 <body>
   <main>
     <div class="select">
       <div class="quiz">Quiz</div>
-      <Hiragana />
+      <SingleHiragana />
     </div>
   </main>
 </body>
@@ -37,5 +37,6 @@
     justify-content: center;
     align-items: center;
     font-size: 100px;
+    margin-bottom: 20px;
   }
 </style>
