@@ -122,22 +122,22 @@
 </script>
 
 <div class="Hiragana">
-  <KanaGroup group={vowel} />
-  <KanaGroup group={k} />
-  <KanaGroup group={s} />
-  <KanaGroup group={t} />
-  <KanaGroup group={n} />
-  <KanaGroup group={h} />
-  <KanaGroup group={m} />
-  <KanaGroup group={ya} />
-  <KanaGroup group={r} />
-  <KanaGroup group={w} />
-  <KanaGroup group={nn} />
-  <KanaGroup group={g} />
-  <KanaGroup group={z} />
-  <KanaGroup group={d} />
-  <KanaGroup group={b} />
   <KanaGroup group={p} />
+  <KanaGroup group={b} />
+  <KanaGroup group={d} />
+  <KanaGroup group={z} />
+  <KanaGroup group={g} />
+  <KanaGroup group={nn} />
+  <KanaGroup group={w} />
+  <KanaGroup group={r} />
+  <KanaGroup group={ya} />
+  <KanaGroup group={m} />
+  <KanaGroup group={h} />
+  <KanaGroup group={n} />
+  <KanaGroup group={t} />
+  <KanaGroup group={s} />
+  <KanaGroup group={k} />
+  <KanaGroup group={vowel} />
 </div>
 
 <style>
