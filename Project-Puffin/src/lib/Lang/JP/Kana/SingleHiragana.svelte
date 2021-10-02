@@ -122,18 +122,18 @@
   ];
 </script>
 
-<div class="SingleHiragana">
+<!-- <div class="SingleHiragana">
   <div class="titleContainer">
-    <div class="title">Simple hiragana</div>
+    <div class="title">Single Hiragana</div>
   </div>
 
   <div class="chart">
+    <KanaGroup group={nn} />
     <KanaGroup group={p} />
     <KanaGroup group={b} />
     <KanaGroup group={d} />
     <KanaGroup group={z} />
     <KanaGroup group={g} />
-    <KanaGroup group={nn} />
     <KanaGroup group={w} />
     <KanaGroup group={r} />
     <KanaGroup group={ya} />
@@ -145,10 +145,29 @@
     <KanaGroup group={k} />
     <KanaGroup group={vowel} />
   </div>
+</div> -->
+
+<div class="SingleHiragana">
+  <KanaGroup group={nn} />
+  <KanaGroup group={p} />
+  <KanaGroup group={b} />
+  <KanaGroup group={d} />
+  <KanaGroup group={z} />
+  <KanaGroup group={g} />
+  <KanaGroup group={w} />
+  <KanaGroup group={r} />
+  <KanaGroup group={ya} />
+  <KanaGroup group={m} />
+  <KanaGroup group={h} />
+  <KanaGroup group={n} />
+  <KanaGroup group={t} />
+  <KanaGroup group={s} />
+  <KanaGroup group={k} />
+  <KanaGroup group={vowel} />
 </div>
 
 <style>
-  .chart {
+  .SingleHiragana {
     /* https://en.wikipedia.org/wiki/Traditional_colors_of_Japan */
     /* Kokushoku */
     background-color: #171412;
@@ -156,31 +175,5 @@
     padding: 15px;
     margin: 3px;
     border-radius: 10px;
-  }
-
-  .SingleHiragana {
-    /* https://en.wikipedia.org/wiki/Traditional_colors_of_Japan */
-    /* Kokushoku */
-    /* background-color: #171412; */
-    background-color: transparent;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .title {
-    padding: 10px;
-    margin: 3px;
-    border-radius: 10px;
-    font-size: 30px;
-    /* https://en.wikipedia.org/wiki/Traditional_colors_of_Japan */
-    /* Kokushoku */
-    background-color: #171412;
-  }
-
-  .titleContainer {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
   }
 </style>
