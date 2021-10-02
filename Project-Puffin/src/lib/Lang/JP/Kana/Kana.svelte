@@ -3,7 +3,7 @@
 
   export let kana;
   export let romanji;
-  export const id = -999;
+  // export const id = -999;
 
   /**
    * Kana selection
