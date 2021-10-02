@@ -1,12 +1,12 @@
 <script>
-  import Quiz from "./lib/Lang/JP/Kana/Quiz.svelte";
+  import Deck from "./lib/Lang/JP/Kana/Deck.svelte";
   import SingleHiragana from "./lib/Lang/JP/Kana/SingleHiragana.svelte";
 </script>
 
 <body>
   <main>
     <div class="select">
-      <Quiz />
+      <Deck />
       <SingleHiragana />
     </div>
   </main>

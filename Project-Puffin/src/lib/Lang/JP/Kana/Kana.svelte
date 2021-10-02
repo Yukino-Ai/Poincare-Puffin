@@ -1,8 +1,10 @@
 <script>
-  import { writable } from "svelte/store";
+  import { deck, clicks } from "./deck.js";
 
   export let kana;
   export let romanji;
+  export let clickId = 0;
+  // export let id = -1;
 
   /**
    * Kana selection
@@ -13,6 +15,14 @@
   function select() {
     console.log(`Kana: ${kana}\nRomanji: ${romanji}`);
     isSelected = !isSelected;
+    if (isSelected) {
+      deck.add({ kana: kana, romanji: romanji });
+      $clicks += 1;
+      clickId = $clicks;
+      console.log($clicks);
+    } else {
+      deck.remove({ kana: kana, romanji: romanji });
+    }
   }
 </script>
 
