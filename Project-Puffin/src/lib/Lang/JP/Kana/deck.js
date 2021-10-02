@@ -14,10 +14,12 @@ function createDeck() {
     remove: (card) => {
       update(function (deck) {
         console.log(deck);
-        const index = deck.findIndex((deckCard) => deckCard === card);
-        console.log(index);
+        const index = deck.findIndex((deckCard) => {
+          deckCard === card;
+        });
+        // console.log(index);
         deck = deck.slice(index);
-        console.log(deck);
+        // console.log(deck);
         return deck;
       });
     },

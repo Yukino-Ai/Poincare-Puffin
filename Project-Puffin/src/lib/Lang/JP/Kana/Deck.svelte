@@ -12,8 +12,8 @@
         <div class="test3">
           <div>{element.kana}</div>
           <div>
-            <!-- {element.kana.codePointAt()} -->
-            {index}
+            {element.kana.codePointAt()}
+            <!-- {index} -->
           </div>
         </div>
       </div>
