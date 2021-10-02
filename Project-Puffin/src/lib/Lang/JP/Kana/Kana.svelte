@@ -4,24 +4,30 @@
   export let kana;
   export let romanji;
 
-  function handleClick() {
+  /**
+   * Kana selection
+   * @type {boolean}
+   */
+  let isSelected = false;
+
+  function select() {
     console.log(`Kana: ${kana}\nRomanji: ${romanji}`);
+    isSelected = !isSelected;
   }
 </script>
 
-<div class="Kana" on:click={handleClick}>
+<div class={isSelected ? "isSelected" : "notSelected"} on:click={select}>
   <div>{kana}</div>
   <!-- <div>{romanji}</div> -->
 </div>
 
 <style>
-  .Kana {
+  .notSelected {
     /* https://en.wikipedia.org/wiki/Traditional_colors_of_Japan */
-    /* Oitake-iro */
+    /* 老竹色 */
     border: 3px solid #5e644f;
-    /* Aisumicha */
+    /* 藍墨茶 */
     background-color: #393432;
-    /* color: snow; */
     font-size: 25px;
     display: flex;
     flex-direction: column;
@@ -30,15 +36,15 @@
     padding: 5px;
     border-radius: 7px;
     cursor: pointer;
+    user-select: none;
   }
 
-  .KanaClicked {
+  .isSelected {
     /* https://en.wikipedia.org/wiki/Traditional_colors_of_Japan */
-    /* Oitake-iro */
-    border: 3px solid #5e644f;
-    /* Aisumicha */
-    background-color: #393432;
-    /* color: snow; */
+    /* 青白橡 */
+    border: 3px solid #bba46d;
+    /* 黄丹  */
+    background-color: #ff4e20;
     font-size: 25px;
     display: flex;
     flex-direction: column;
@@ -47,5 +53,6 @@
     padding: 5px;
     border-radius: 7px;
     cursor: pointer;
+    user-select: none;
   }
 </style>
