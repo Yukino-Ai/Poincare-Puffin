@@ -22,4 +22,4 @@ function createDeck() {
 }
 
 export const deck = createDeck();
-export const clicks = writable(0);
+// export const clicks = writable(0);

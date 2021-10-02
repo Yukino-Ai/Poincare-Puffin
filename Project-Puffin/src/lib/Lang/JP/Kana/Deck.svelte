@@ -5,15 +5,16 @@
 <div id="Deck">
   Deck
   <div class="test2">
-    {#each $deck as element (element.kana)}
-      <!-- {#each $deck as element} -->
+    <!-- {#each $deck as element, index (element.kana.codePointAt())} -->
+    {#each $deck as element, index}
       <!-- {#each $deck as element (element.clickId)} -->
       <div class="test">
         <div class="test3">
           <div>{element.kana}</div>
-          <!-- <div>
-            {element.clickId}
-          </div> -->
+          <div>
+            <!-- {element.kana.codePointAt()} -->
+            {index}
+          </div>
         </div>
       </div>
     {/each}

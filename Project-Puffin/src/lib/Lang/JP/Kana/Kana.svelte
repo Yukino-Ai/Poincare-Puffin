@@ -1,10 +1,9 @@
 <script>
-  import { deck, clicks } from "./deck.js";
+  import { deck } from "./deck.js";
 
   export let kana;
   export let romanji;
-  export let clickId = 0;
-  // export let id = -1;
+  export const id = -999;
 
   /**
    * Kana selection
@@ -17,9 +16,6 @@
     isSelected = !isSelected;
     if (isSelected) {
       deck.add({ kana: kana, romanji: romanji });
-      $clicks += 1;
-      clickId = $clicks;
-      console.log($clicks);
     } else {
       deck.remove({ kana: kana, romanji: romanji });
     }
