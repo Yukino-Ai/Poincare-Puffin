@@ -10,8 +10,13 @@ SvelteKit docs
 
 ## Links
 
+Nicer Svelte imports via  
+[🎥 Rich Harris - Svelte Cubed](https://www.youtube.com/watch?v=qD6Pmp45sO4)  
+![yt-qD6Pmp45sO4-4-28.png](images/yt-qD6Pmp45sO4-4-28.png)  
+![yt-qD6Pmp45sO4-4-40.png](images/yt-qD6Pmp45sO4-4-40.png)
+
 How to import JSON files with SvelteKit?
-[👥 SvelteKit JSON Import: use JSON Data in Svelte](https://rodneylab.com/sveltekit-json-import/)  
+[👥 SvelteKit JSON Import: use JSON Data in Svelte](images/https://rodneylab.com/sveltekit-json-import/)  
 Rodney Lab
 
 ```
